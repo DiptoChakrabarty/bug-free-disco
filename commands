@@ -1,0 +1,17 @@
+apt-get install build-essential
+    2  apt-get update
+    3  apt-get upgrade
+    4  apt-get install build-essential
+    5  apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+    6  apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
+    7  echo "deb http://us.archive.ubuntu.com/ubuntu/ yakkety universe" | sudo tee -a /etc/apt/sources.list
+    8  echo "deb http://us.archive.ubuntu.com/ubuntu/ yakkety universe" |  tee -a /etc/apt/sources.list
+    9  sudo apt-get update
+   10  apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
+   11  apt-get install libjasper-dev
+   12  apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev  libdc1394-22-dev
+   19  pip install opencv-python
+   20  apt-get install python3-pip
+   21  pip3 install opencv-python
+   22  python3
+   23  history
