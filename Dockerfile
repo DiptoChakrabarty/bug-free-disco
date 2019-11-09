@@ -1,6 +1,6 @@
-FROM python:latest
+FROM continuumio/anaconda
 RUN  mkdir /vids
 WORKDIR   /vids
 COPY   .  .
-RUN  pip3 install -r requirements.txt
+RUN  conda install --file requirements.txt
 CMD   ["python3","camera.py"]
