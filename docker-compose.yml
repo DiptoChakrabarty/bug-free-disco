@@ -1,0 +1,11 @@
+version: "3"
+services: 
+        camscan:
+              container_name: faceapp
+              restart: always
+              image: cam:v5
+        volumes:
+        - /tmp/.X11-unix:/tmp/.X11-unix
+        - ~/.Xauthority:/.Xauthority:ro
+        - /dev/video0:/dev/video0 
+        - /dev/video1:/dev/video1  
