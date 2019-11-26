@@ -3,7 +3,7 @@ services:
         camscan:
               container_name: faceapp
               restart: always
-              image: cam:v5
+              image: capture
         volumes:
         - /tmp/.X11-unix:/tmp/.X11-unix
         - ~/.Xauthority:/.Xauthority:ro

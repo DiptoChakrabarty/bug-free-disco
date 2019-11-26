@@ -1,8 +1,5 @@
-FROM cam:v3
+FROM cam:v5
+RUN mkdir -p /vids
 WORKDIR   /vids
 COPY   .  .
-VOLUME  /tmp/.X11-unix:/tmp/.X11-unix  \
-        - /dev/video0:/dev/video0 \
-        - /dev/video1:/dev/video1      
-RUN  export DISPLAY=:0  && dbus-uuidgen > /etc/machine-id && apt-get install vim -y
-CMD   ["python3","camera.py"] 
+CMD   ["python3","photo.py"] 
